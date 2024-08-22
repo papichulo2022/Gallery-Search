@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 
+      - Tailwind link 
+    -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--
+      -  css link
+    -->
+    <link rel="stylesheet" href="./style.css">
+
+
+    <title>Image Gallery</title>
+  </head>
+  <body>
+    <!-- Global Container -->
+    <div class="flex items-center justify-center min-h-screen bg-cyan-50">
+      <!-- Card Container -->
+      <div class="bg-white p-6 m-3 space-y-10 shadow-2xl rounded-3xl md:p-40">
+        <h1 class="text-center font-bold text-3xl md:text-4xl ">Search photos & illustrations</h1>
+        <!-- Search Container -->
+        <div
+          class="flex flex-col justify-between space-y-5 md:flex-row md:space-y-0"
+        >
+          <!-- Input and SVG Container -->
+          <form id="search-form" class="flex justify-between mx-auto border-b">
+            <input
+              id="search-box"
+              type="text"
+              class="ml-6 border-none md:w-80 placeholder:font-thin focus:outline-none"
+              placeholder="Search"
+            />
+            <button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-8 text-gray-300 duration-200 hover:scale-120"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <circle cx="10" cy="10" r="7" />
+                <line x1="21" y1="21" x2="15" y2="15" />
+              </svg>
+            </button>
+          </form>
+
+        </div>
+
+        <!-- Gallery Container -->
+        <div id="search-result" class="grid gap-4 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4">
+          <!-- Display Images -->
+          
+     
+        </div>
+        <!-- Load More Btn -->
+        <button
+             id="show-more-btn"
+             class="md:mx-auto py-2 px-8 text-lg font-normal text-white bg-black border border-black rounded-md shadow-2xl duration-200 hover:bg-white hover:text-black
+             lg:mx-auto"
+           >
+             Load More
+        </button>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
