@@ -1,5 +1,5 @@
 # Image Gallery Project
-https://github.com/papichulo2022/Gallery-Search/blob/main/gallery.png?raw=true
+[https://github.com/papichulo2022/Gallery-Search/blob/main/gallery.png?raw=true](https://raw.githubusercontent.com/papichulo2022/Gallery-Search/main/gallery.png)
 
 
 # Gallery Search API using Unsplash
